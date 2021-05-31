@@ -1,0 +1,12 @@
+{
+  "extends": ["react-app"],
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "indent": ["warn", 4]
+  }
+}
