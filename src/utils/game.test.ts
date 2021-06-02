@@ -19,7 +19,6 @@ import {
     expectedPairsForCards2,
     expectedPairsForCards3,
     expectedPairsForCards4,
-    expectedDealResults
 } from "../mocks/mocks";
 
 describe("Game Toolbox", () => {

@@ -7,7 +7,7 @@ export interface Props {
     players: PlayerEntity[];
 }
 
-export const PlayersContainer = ({ players }: Props) => {
+const PlayersContainer = ({ players }: Props) => {
     if (!players || players.length === 0) {
         return null;
     }
@@ -27,5 +27,6 @@ export const PlayersContainer = ({ players }: Props) => {
 export default memo(PlayersContainer);
 
 export {
+    PlayersContainer,
     Player
 };

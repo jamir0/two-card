@@ -584,6 +584,36 @@ const expectedDealResults: CardsDealResult = {
     }]
 };
 
+const mockOfPlayer = {
+    name:"Player 1",
+    cards:[
+        {suit: CardSuits.DIAMOND,value:CardValues.TEN},
+        {suit: CardSuits.HEART, value:CardValues.EIGHT},
+        {suit:CardSuits.HEART,value:CardValues.TEN},
+        {suit:CardSuits.CLUB,value:CardValues.QUEEN},
+        {suit:CardSuits.SPADE,value:CardValues.JACK},
+        {suit:CardSuits.HEART,value:CardValues.SIX},
+        {suit:CardSuits.DIAMOND,value:CardValues.EIGHT}
+    ],
+    pairs:{
+        [CardValues.EIGHT]: {
+            cards: [
+                {suit:CardSuits.HEART,value:CardValues.EIGHT},
+                {suit:CardSuits.DIAMOND,value:CardValues.EIGHT}
+            ],
+            color: expect.any(String)
+        },
+        [CardValues.TEN]: {
+            cards: [
+                {suit:CardSuits.DIAMOND,value:CardValues.TEN},
+                {suit:CardSuits.HEART,value:CardValues.TEN}
+            ],
+            color: expect.any(String)
+        }
+    },
+    pairsCount:2
+};
+
 export {
     expectedDecks,
     randomCards1,
@@ -593,5 +623,6 @@ export {
     expectedPairsForCards2,
     expectedPairsForCards3,
     expectedPairsForCards4,
-    expectedDealResults
+    expectedDealResults,
+    mockOfPlayer
 };

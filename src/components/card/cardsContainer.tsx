@@ -7,10 +7,13 @@ export interface Props {
     cards: CardEntity[];
 }
 
-export const CardContainer = ({ cards }: Props) => (
+const CardsContainer = ({ cards }: Props) => (
     <div className={styles.cardsContainer}>
         {cards.map(card => <Card key={`${card.suit}-${card.value}`} {...card} />)}
     </div>
 );
-
-export default memo(CardContainer);
+export {
+    CardsContainer,
+    Card
+};
+export default memo(CardsContainer);

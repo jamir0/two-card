@@ -36,7 +36,6 @@ const App = () => {
         }),
         [settings]
     );
-    console.log("gameResults=", gameResults);
     return (
         <div className="App">
 
