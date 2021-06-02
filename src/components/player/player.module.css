@@ -1,0 +1,12 @@
+.playersContainer {
+    padding: 10px;
+}
+
+.playerItem {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.name {
+    width: 100px;
+}
