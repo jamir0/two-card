@@ -2,11 +2,11 @@ import React, { useCallback, useState } from "react";
 import { CardsDealResult, DeckOfCards, SettingsState } from "../../types";
 import "./App.css";
 import { dealCards, generateDeckOfCards } from "../../utils/game";
-import Desk from "../desk";
-import { Settings } from "../settings";
+import Desk from "../desk/desk";
+import { Settings } from "../settings/settings";
 
 const initialSettingsState: SettingsState = {
-    playersCount: 2,
+    playersCount: 3,
     cardsCount: DeckOfCards.SHORT,
     cardsPerPlayer: 7
 };

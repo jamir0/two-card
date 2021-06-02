@@ -1,8 +1,13 @@
 import { CardSuits, CardValues } from "./types";
 
-export const CARD_SUITES: readonly CardSuits[] = [CardSuits.DIAMOND, CardSuits.HEART, CardSuits.CLUB, CardSuits.SPADE];
+export const CARD_SUITES: CardSuits[] = [
+    CardSuits.DIAMOND,
+    CardSuits.HEART,
+    CardSuits.CLUB,
+    CardSuits.SPADE
+];
 
-export const CARD_VALUES: readonly CardValues[] = [
+export const CARD_VALUES: CardValues[] = [
     CardValues.TWO,
     CardValues.THREE,
     CardValues.FOUR,
@@ -17,3 +22,18 @@ export const CARD_VALUES: readonly CardValues[] = [
     CardValues.KING,
     CardValues.ACE
 ];
+
+export const CARD_SUITES_STYLES_MAP = {
+    [CardSuits.HEART]: {
+        colorStyle: "redSuit",
+    },
+    [CardSuits.CLUB]: {
+        colorStyle: "blackSuit"
+    },
+    [CardSuits.SPADE]: {
+        colorStyle: "blackSuit"
+    },
+    [CardSuits.DIAMOND]: {
+        colorStyle: "redSuit"
+    }
+};

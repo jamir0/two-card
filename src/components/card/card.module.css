@@ -1,0 +1,60 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+}
+
+.cardItem {
+    height: 200px;
+    font-size: 48px;
+    width: 130px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shadow{
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.redSuit {
+    color: red;
+}
+
+.blackSuit {
+    color: black;
+}
+.diamondSuit, .heartSuit, .clubSuit, .spadeSuit {
+}
+
+
+.diamondSuit::after, .heartSuit::after, .clubSuit::after, .spadeSuit::after {
+   display: inline-block;
+   font-size: 48px;
+}
+
+.diamondSuit::after {
+    content: "\2666";
+}
+
+.heartSuit::after {
+    content: "\2665";
+    color: red;
+}
+
+.clubSuit::after {
+    content: "\2663";
+    color: black;
+}
+
+.spadeSuit::after {
+    content: "\2660";
+    color: black;
+}

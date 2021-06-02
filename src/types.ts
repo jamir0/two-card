@@ -26,21 +26,28 @@ export enum CardValues {
     EIGHT = "8",
     NINE = "9",
     TEN = "10",
-    JACK = "Jack",
-    QUEEN = "Queen",
-    KING = "King",
-    ACE = "Ace"
+    JACK = "J",
+    QUEEN = "Q",
+    KING = "K",
+    ACE = "A"
 }
 
 export interface CardEntity {
     suit: CardSuits;
     value: CardValues;
-}
-export interface CardsPairs {
-    [cardValue: string]: CardEntity[];
+    color?: string;
 }
 
-export interface Player {
+export interface Pair {
+    cards: CardEntity[];
+    color: string;
+}
+
+export interface CardsPairs {
+    [cardValue: string]: Pair;
+}
+
+export interface PlayerEntity {
     cards: CardEntity[];
     name: string;
     pairs: CardsPairs;
@@ -48,6 +55,10 @@ export interface Player {
 }
 
 export interface CardsDealResult {
-    players: Player[];
-    winners?: Player[];
+    players: PlayerEntity[];
+    winners?: PlayerEntity[];
+}
+
+export interface ExpectedDataSet {
+    [cardsCount: string]: CardEntity[]
 }

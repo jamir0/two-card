@@ -1,0 +1,28 @@
+.settingsPage {
+    border: 1px solid white;
+    border-radius: 3px;
+    text-shadow: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 150px;
+}
+
+.label, .value {
+    display: inline-block;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.value {
+    text-align: right;
+}

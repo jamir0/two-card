@@ -1,0 +1,7 @@
+.resultsContainer {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: #56ec9c;
+    color: red;
+}
